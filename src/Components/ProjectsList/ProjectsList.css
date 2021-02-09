@@ -1,0 +1,32 @@
+.project-list {
+  margin: -5px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-list-item {
+  width: 32%;
+  margin: 5px;
+  transition: transform .2s ease;
+  float: left;
+}
+
+.project-list-item:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .project-list-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-list-item {
+    width: 100%;
+  }
+}

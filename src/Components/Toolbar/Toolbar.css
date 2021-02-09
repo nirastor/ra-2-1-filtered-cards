@@ -1,0 +1,23 @@
+.toolbar {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.toolbar-item {
+  display: block;
+  border: 1px solid grey;
+  padding: 6px 12px;
+  margin-right: 12px;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.toolbar-item:hover {
+  background-color: #e5e5e5;
+}
+
+.toolbar-item.selected {
+  background-color: #e5e5e5;
+  cursor: default;
+}
